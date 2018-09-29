@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name = "index"),
+    path('text_sent', views.text_sent, name = 'text_sent'),
 ]

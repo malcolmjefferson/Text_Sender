@@ -52,15 +52,10 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Text Sender</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Try it out below!</h2>
-          <form action = "/send_text/text_sent" method = "post">
-            <div class="form-group">
-              {% csrf_token %}
-              {{ form }}
-              <button type="submit" class="btn btn-outline-dark" style = "color: #fff;" >Submit</button>
-            </div>
-          </form>
+          <h1 class="mx-auto my-0 text-uppercase">Text Sent!</h1>
+          <form action="/send_text/">
+              <button type="submit" class="btn btn-outline-dark" style = "color: #fff;">Try Again!</button>
+            </form>
         </div>
       </div>
     </header>
